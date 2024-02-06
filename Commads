@@ -10,6 +10,11 @@ go get -u gorm.io/gorm
 #install mysql driver
 go get -u gorm.io/driver/mysql
 
+# hot reload
+go install github.com/cosmtrek/air@latest
+
+
+
 now create a main.go file and paste this code 
 ############################
 package main
