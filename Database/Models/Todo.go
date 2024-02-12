@@ -7,8 +7,8 @@ import (
 
 type Todo struct {
 	ID          uint
-	Title       string
-	Description string
+	Title       string `form:"title" json:"title"  binding:"required"`
+	Description string `form:"description" json:"description" binding:"required"`
 	Completed   bool
 	CreatedAt   time.Time
 	UpdatedAt   time.Time
